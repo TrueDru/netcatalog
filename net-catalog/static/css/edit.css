@@ -1,0 +1,83 @@
+/* static/css/edit.css */
+
+/* Body styling for the edit page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Center the form container */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title of the form */
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Style for form labels */
+label {
+    font-weight: bold;
+    color: #34495e;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Style for input fields */
+input[type="text"], input[type="url"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Make the textarea taller */
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* Button styling */
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Style for the back link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3498db;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover {
+    color: #2980b9;
+}

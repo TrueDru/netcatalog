@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Resource</title>
+    <!-- Link to the edit-specific CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/edit.css') }}">
+</head>
+<body>
+    <h1>Edit Resource</h1>
+    <form method="POST">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="{{ resource.name }}" required>
+        </div>
+        <div>
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" value="{{ resource.url }}" required>
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description">{{ resource.description }}</textarea>
+        </div>
+        <button type="submit">Save Changes</button>
+    </form>
+    <a href="{{ url_for('index') }}">Back to List</a>
+</body>
+</html>
